@@ -11,6 +11,9 @@ app.use(cors())
 app.use(express.json());
 
 app.use("/api/", userRoute);
+app.get("/", (req,res)=>{
+    res.send("api working");
+});
 
 
 // Start the server
